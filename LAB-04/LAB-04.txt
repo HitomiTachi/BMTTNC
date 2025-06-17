@@ -1,6 +1,3 @@
-git config --global user.name "HitomiTachi"
-git config --global user.email "lethanhnhanminer@gmail.com"
-
 pip install -r .\requirements.txt
 python .\api.py
 --ecc--
@@ -10,3 +7,7 @@ python .\callAPI_ecc_cipher.py
 --rsa--
 pyuic5 -x ./ui/rsa.ui -o ./ui/rsa.py
 python .\callAPI_rsa_cipher.py
+
+
+python .\server.py
+python .\client.py

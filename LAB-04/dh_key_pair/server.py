@@ -10,7 +10,7 @@ def generate_server_key_pair(parameters):
 def main():
     parameters = generate_dh_parameters()
     private_key, public_key = generate_server_key_pair(parameters)
-    with open("LAB-04/dh_key_pair/server_public_key.pem", "wb") as f:
+    with open("server_public_key.pem", "wb") as f:
         f.write(public_key.public_bytes(
             encoding=serialization.Encoding.PEM,
             format=serialization.PublicFormat.SubjectPublicKeyInfo 
